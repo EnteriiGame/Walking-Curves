@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<robot name="leg">
+  <link name="GE_27_1"/>
+  <link name="Part_1_4_1"/>
+  <link name="Part_2_1"/>
+  <link name="Part_2_2"/>
+  <link name="Segment1Prawypierwszy_v7_1"/>
+  <link name="Segment1Prawypierwszy_v7_2"/>
+  <link name="Segment3-4_v11_1"/>
+  <link name="Segment3-4_v11_2"/>
+  <link name="WJ-WK00-0018_45_1"/>
+  <link name="WJ-WK00-0018_45_2"/>
+  <link name="WJ-WK00-0018_45_3"/>
+  <link name="WJ-WK00-0018_45_4"/>
+  <link name="WJ-WK00-0018_45_5"/>
+  <joint name="Revolute_6" type="revolute">
+    <parent link="GE_27_1"/>
+    <child link="Segment1Prawypierwszy_v7_2"/>
+    <origin xyz="-0.03275 -0.01025 -0.0352" rpy="3.1415927 0 0"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="5" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <joint name="Fastened_6" type="fixed">
+    <parent link="Segment1Prawypierwszy_v7_2"/>
+    <child link="Segment1Prawypierwszy_v7_1"/>
+    <origin xyz="0 0 0.005" rpy="0 0 3.1415927"/>
+  </joint>
+  <joint name="Fastened_5" type="fixed">
+    <parent link="Segment1Prawypierwszy_v7_1"/>
+    <child link="WJ-WK00-0018_45_5"/>
+    <origin xyz="-0.0201 -0.02700504 0.013" rpy="-1.5707963 0 -1.5707963"/>
+  </joint>
+  <joint name="Revolute_5" type="revolute">
+    <parent link="WJ-WK00-0018_45_5"/>
+    <child link="Part_2_2"/>
+    <origin xyz="-0.027 -6.9e-07 0.0446" rpy="0 0 3.1415927"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="5" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <joint name="Fastened_4" type="fixed">
+    <parent link="Part_2_2"/>
+    <child link="WJ-WK00-0018_45_4"/>
+    <origin xyz="0.01535671 0.02329869 -0.024" rpy="1.5707963 0 1.5707963"/>
+  </joint>
+  <joint name="Revolute_4" type="revolute">
+    <parent link="WJ-WK00-0018_45_4"/>
+    <child link="Segment3-4_v11_2"/>
+    <origin xyz="0.027 -6.9e-07 0.00885" rpy="0 0 0"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="5" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <joint name="Fastened_3" type="fixed">
+    <parent link="Segment3-4_v11_2"/>
+    <child link="WJ-WK00-0018_45_3"/>
+    <origin xyz="0.0863 0 -0.0449" rpy="0 0 -1.5707963"/>
+  </joint>
+  <joint name="Revolute_3" type="revolute">
+    <parent link="WJ-WK00-0018_45_3"/>
+    <child link="Segment3-4_v11_1"/>
+    <origin xyz="-6.9e-07 0.027 -0.00385" rpy="3.1415927 0 1.5707963"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="5" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <joint name="Fastened_2" type="fixed">
+    <parent link="Segment3-4_v11_1"/>
+    <child link="WJ-WK00-0018_45_2"/>
+    <origin xyz="0.0863 0 -0.0449" rpy="0 0 -1.5707963"/>
+  </joint>
+  <joint name="Revolute_2" type="revolute">
+    <parent link="WJ-WK00-0018_45_2"/>
+    <child link="Part_2_1"/>
+    <origin xyz="-6.9e-07 0.027 -0.00385" rpy="3.1415927 0 1.5707963"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="5" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <joint name="Revolute_1" type="revolute">
+    <parent link="Part_2_1"/>
+    <child link="WJ-WK00-0018_45_1"/>
+    <origin xyz="0.03619738 0.02353646 -0.02454329" rpy="-1.5707963 1.5707963 0"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="10" velocity="5" lower="-3.14159" upper="3.14159"/>
+  </joint>
+  <joint name="Fastened_1" type="fixed">
+    <parent link="WJ-WK00-0018_45_1"/>
+    <child link="Part_1_4_1"/>
+    <origin xyz="-0.027 6.9e-07 -0.00885" rpy="0 0 0"/>
+  </joint>
+</robot>

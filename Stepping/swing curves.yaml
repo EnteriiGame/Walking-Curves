@@ -1,0 +1,69 @@
+# swing_curves.yaml
+# ─────────────────────────────────────────────────────────────────────────────
+# Bezier swing-curve definitions for gait.py
+#
+# Each curve is a named profile with 6 control points (x, y, z).
+# Units: metres, relative to the foot's start position at (0, 0, 0).
+#   x = forward  (direction of travel)
+#   y = lateral  (sideways — usually 0 for straight swing)
+#   z = height   (up is positive)
+#
+# The robot will interpolate along the curve from start to end during a swing.
+# Point 0 is always the foot's current position (overridden at runtime).
+# Point 5 is always the foot's landing position  (overridden at runtime).
+# Points 1–4 define the shape of the arc in between.
+#
+# Only the z (height) column and the x-fractions really matter for feel —
+# the start/end x values get scaled to the actual step length at runtime.
+#
+# active_curve: which curve to use  (change this line to switch profiles)
+# ─────────────────────────────────────────────────────────────────────────────
+
+active_curve: normal
+
+curves:
+
+  # Smooth, natural arc — good default
+  normal:
+    description: "Smooth medium arc, gentle lift and touchdown"
+    #            x_frac   y      z_frac   (fractions of step length / step height)
+    points:
+      - [0.00,  0.00,  0.00]   # P0  start  (overridden)
+      - [0.45,  0.00,  0.20]   # P1  early lift
+      - [0.85,  0.00,  0.90]   # P2  rising
+      - [1.50,  0.00,  2.00]   # P3  peak
+      - [1.70,  0.00,  0.60]   # P4  descending
+      - [2.00,  0.00,  0.00]   # P5  end    (overridden)
+
+  # High, floaty arc — exaggerated step, good for rough terrain
+  high:
+    description: "Tall arc with slower rise and faster fall"
+    points:
+      - [0.00,  0.00,  0.00]
+      - [0.10,  0.00,  0.30]
+      - [0.30,  0.00,  1.00]
+      - [0.50,  0.00,  1.20]   # peak is 20% higher than step height
+      - [0.75,  0.00,  0.80]
+      - [2.00,  0.00,  0.00]
+
+  # Low, quick arc — fast skimming step
+  low:
+    description: "Low fast step, barely clears the ground"
+    points:
+      - [0.00,  0.00,  0.00]
+      - [0.20,  0.00,  0.10]
+      - [0.40,  0.00,  0.50]
+      - [0.50,  0.00,  0.55]   # peak is barely above ground
+      - [0.65,  0.00,  0.30]
+      - [2.00,  0.00,  0.00]
+
+  # Stomping arc — foot rises straight up then drops straight down
+  stomp:
+    description: "Vertical lift, pause at top, vertical drop"
+    points:
+      - [0.00,  0.00,  0.00]
+      - [0.05,  0.00,  0.80]   # shoot up fast near start
+      - [0.30,  0.00,  1.00]
+      - [0.70,  0.00,  1.00]   # hold high for middle portion
+      - [0.95,  0.00,  0.80]   # drop near the end
+      - [2.00,  0.00,  0.00]

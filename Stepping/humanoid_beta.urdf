@@ -1,0 +1,749 @@
+<?xml version="1.0" ?>
+<robot name="humanoid_beta">
+  <link name="gacieOgarniete_v10_1">
+    <visual name="gacieOgarniete_v10_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/gacieOgarniete_v10_1.stl"/>
+      </geometry>
+      <material name="gacieOgarniete_v10_1-material">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="gacieOgarniete_v10_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/gacieOgarniete_v10_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.60201012 0.00218249 -0.1558966" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="GE_27_1">
+    <visual name="GE_27_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/GE_27_1.stl"/>
+      </geometry>
+      <material name="GE_27_1-material">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="GE_27_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/GE_27_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.00725 -0.01025 -0.0256" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="GE_27_2">
+    <visual name="GE_27_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/GE_27_2.stl"/>
+      </geometry>
+      <material name="GE_27_2-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="GE_27_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/GE_27_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.00725 -0.01025 -0.0256" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment1Prawypierwszy_v7_2">
+    <visual name="Segment1Prawypierwszy_v7_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Prawypierwszy_v7_2.stl"/>
+      </geometry>
+      <material name="Segment1Prawypierwszy_v7_2-material">
+        <color rgba="1 0.5 0 1"/>
+      </material>
+    </visual>
+    <collision name="Segment1Prawypierwszy_v7_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Prawypierwszy_v7_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.01185779 0.02607359 0.02988321" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment1Lewy_v6_1">
+    <visual name="Segment1Lewy_v6_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Lewy_v6_1.stl"/>
+      </geometry>
+      <material name="Segment1Lewy_v6_1-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="Segment1Lewy_v6_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Lewy_v6_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.01185779 -0.02607359 -0.02988321" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment1Prawypierwszy_v7_1">
+    <visual name="Segment1Prawypierwszy_v7_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Prawypierwszy_v7_1.stl"/>
+      </geometry>
+      <material name="Segment1Prawypierwszy_v7_1-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="Segment1Prawypierwszy_v7_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Prawypierwszy_v7_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.01185779 -0.02607359 0.02488321" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment1Lewy_v6_2">
+    <visual name="Segment1Lewy_v6_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Lewy_v6_2.stl"/>
+      </geometry>
+      <material name="Segment1Lewy_v6_2-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="Segment1Lewy_v6_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment1Lewy_v6_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.01185779 -0.02607359 -0.02488321" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_5">
+    <visual name="WJ-WK00-0018_45_5_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_5.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_5-material">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_5_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_5.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.017 -6.9e-07 0.01855" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_6">
+    <visual name="WJ-WK00-0018_45_6_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_6.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_6-material">
+        <color rgba="0 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_6_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_6.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.017 -6.9e-07 -0.01405" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Part_2_2">
+    <visual name="Part_2_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_2.stl"/>
+      </geometry>
+      <material name="Part_2_2-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="Part_2_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-5.011e-05 0.02009869 -0.024" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Part_2_3">
+    <visual name="Part_2_3_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_3.stl"/>
+      </geometry>
+      <material name="Part_2_3-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="Part_2_3_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_3.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-5.011e-05 -0.02009869 -0.025" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_4">
+    <visual name="WJ-WK00-0018_45_4_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_4.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_4-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_4_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_4.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.017 -6.9e-07 -0.01405" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_7">
+    <visual name="WJ-WK00-0018_45_7_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_7.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_7-material">
+        <color rgba="1 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_7_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_7.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.017 -6.9e-07 -0.01405" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment3-4_v11_2">
+    <visual name="Segment3-4_v11_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_2.stl"/>
+      </geometry>
+      <material name="Segment3-4_v11_2-material">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision name="Segment3-4_v11_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.04725 -0.01 -0.0245" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment3-4_v11_3">
+    <visual name="Segment3-4_v11_3_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_3.stl"/>
+      </geometry>
+      <material name="Segment3-4_v11_3-material">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="Segment3-4_v11_3_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_3.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.04725 -0.01 -0.0245" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_3">
+    <visual name="WJ-WK00-0018_45_3_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_3.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_3-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_3_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_3.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-6.9e-07 0.017 0.01905" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_8">
+    <visual name="WJ-WK00-0018_45_8_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_8.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_8-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_8_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_8.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.017 -6.9e-07 -0.01405" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment3-4_v11_1">
+    <visual name="Segment3-4_v11_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_1.stl"/>
+      </geometry>
+      <material name="Segment3-4_v11_1-material">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="Segment3-4_v11_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.04725 -0.01 -0.0245" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Segment3-4_v11_4">
+    <visual name="Segment3-4_v11_4_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_4.stl"/>
+      </geometry>
+      <material name="Segment3-4_v11_4-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="Segment3-4_v11_4_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Segment3-4_v11_4.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.01 -0.04725 0.0245" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_2">
+    <visual name="WJ-WK00-0018_45_2_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_2.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_2-material">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_2_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_2.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-6.9e-07 0.017 0.01905" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_9">
+    <visual name="WJ-WK00-0018_45_9_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_9.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_9-material">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_9_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_9.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.017 -6.9e-07 -0.01405" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Part_2_1">
+    <visual name="Part_2_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_1.stl"/>
+      </geometry>
+      <material name="Part_2_1-material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision name="Part_2_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="0.01609869 -0.00046354 -0.02449318" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Part_2_4">
+    <visual name="Part_2_4_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_4.stl"/>
+      </geometry>
+      <material name="Part_2_4-material">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="Part_2_4_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_2_4.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.00046354 -0.01609869 0.02450682" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_1">
+    <visual name="WJ-WK00-0018_45_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_1.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.01 0 -0.0229" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="WJ-WK00-0018_45_10">
+    <visual name="WJ-WK00-0018_45_10_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_10.stl"/>
+      </geometry>
+      <material name="WJ-WK00-0018_45_10-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="WJ-WK00-0018_45_10_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/WJ-WK00-0018_45_10.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.01 0 -0.0229" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="Part_1_4_1">
+    <visual name="Part_1_4_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_1_4_1.stl"/>
+      </geometry>
+      <material name="Part_1_4_1-material">
+        <color rgba="1 0 0.5 1"/>
+      </material>
+    </visual>
+    <collision name="Part_1_4_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/Part_1_4_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.0072 0 -0.0159" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <link name="StopaLewa_v6_1">
+    <visual name="StopaLewa_v6_1_visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/StopaLewa_v6_1.stl"/>
+      </geometry>
+      <material name="StopaLewa_v6_1-material">
+        <color rgba="1 1 0 1"/>
+      </material>
+    </visual>
+    <collision name="StopaLewa_v6_1_collision">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="meshes/StopaLewa_v6_1.stl"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0"/>
+      <origin xyz="-0.13018891 0.05903855 0.01856722" rpy="0 0 0"/>
+    </inertial>
+  </link>
+  <joint name="Fastened_7" type="fixed">
+    <origin xyz="-0.70059149 -0.21692398 -0.16673506" rpy="1.5707963 1.3291182 -3.1415927"/>
+    <parent link="gacieOgarniete_v10_1"/>
+    <child link="GE_27_1"/>
+  </joint>
+  <joint name="Fastened_8" type="fixed">
+    <origin xyz="-0.60155585 -0.21692398 -0.19114696" rpy="1.5707963 1.3291182 -3.1415927"/>
+    <parent link="gacieOgarniete_v10_1"/>
+    <child link="GE_27_2"/>
+  </joint>
+  <joint name="Revolute_6" type="revolute">
+    <origin xyz="-0.03275 -0.01025 -0.0352" rpy="3.1415927 0 0"/>
+    <parent link="GE_27_1"/>
+    <child link="Segment1Prawypierwszy_v7_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Revolute_7" type="revolute">
+    <origin xyz="-0.03275 -0.01025 -0.0352" rpy="0 0 3.1415927"/>
+    <parent link="GE_27_2"/>
+    <child link="Segment1Lewy_v6_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Fastened_6" type="fixed">
+    <origin xyz="0 0 0.005" rpy="0 0 3.1415927"/>
+    <parent link="Segment1Prawypierwszy_v7_2"/>
+    <child link="Segment1Prawypierwszy_v7_1"/>
+  </joint>
+  <joint name="Fastened_9" type="fixed">
+    <origin xyz="0 0 -0.003" rpy="0 0 0"/>
+    <parent link="Segment1Lewy_v6_1"/>
+    <child link="Segment1Lewy_v6_2"/>
+  </joint>
+  <joint name="Fastened_5" type="fixed">
+    <origin xyz="-0.0201 -0.02700504 0.013" rpy="-1.5707963 0 -1.5707963"/>
+    <parent link="Segment1Prawypierwszy_v7_1"/>
+    <child link="WJ-WK00-0018_45_5"/>
+  </joint>
+  <joint name="Fastened_10" type="fixed">
+    <origin xyz="-0.0156 -0.02700504 -0.013" rpy="-1.5707963 0 1.5707963"/>
+    <parent link="Segment1Lewy_v6_2"/>
+    <child link="WJ-WK00-0018_45_6"/>
+  </joint>
+  <joint name="Revolute_5" type="revolute">
+    <origin xyz="-0.027 -6.9e-07 0.0446" rpy="0 0 3.1415927"/>
+    <parent link="WJ-WK00-0018_45_5"/>
+    <child link="Part_2_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Fastened_11" type="fixed">
+    <origin xyz="0.02700002 -7e-07 -0.0401" rpy="3.1415927 0 0"/>
+    <parent link="WJ-WK00-0018_45_6"/>
+    <child link="Part_2_3"/>
+  </joint>
+  <joint name="Fastened_4" type="fixed">
+    <origin xyz="0.01535671 0.02329869 -0.024" rpy="1.5707963 0 1.5707963"/>
+    <parent link="Part_2_2"/>
+    <child link="WJ-WK00-0018_45_4"/>
+  </joint>
+  <joint name="Fastened_12" type="fixed">
+    <origin xyz="0.01535671 -0.02329869 -0.025" rpy="-1.5707963 0 -1.5707963"/>
+    <parent link="Part_2_3"/>
+    <child link="WJ-WK00-0018_45_7"/>
+  </joint>
+  <joint name="Revolute_4" type="revolute">
+    <origin xyz="0.027 -6.9e-07 0.00885" rpy="0 0 0"/>
+    <parent link="WJ-WK00-0018_45_4"/>
+    <child link="Segment3-4_v11_2"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Revolute_8" type="revolute">
+    <origin xyz="0.027 -6.9e-07 0.00885" rpy="0 0 0"/>
+    <parent link="WJ-WK00-0018_45_7"/>
+    <child link="Segment3-4_v11_3"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Fastened_3" type="fixed">
+    <origin xyz="0.0863 0 -0.0449" rpy="0 0 -1.5707963"/>
+    <parent link="Segment3-4_v11_2"/>
+    <child link="WJ-WK00-0018_45_3"/>
+  </joint>
+  <joint name="Fastened_13" type="fixed">
+    <origin xyz="0.0863 0 -0.0399" rpy="3.1415927 0 0"/>
+    <parent link="Segment3-4_v11_3"/>
+    <child link="WJ-WK00-0018_45_8"/>
+  </joint>
+  <joint name="Revolute_3" type="revolute">
+    <origin xyz="-6.9e-07 0.027 -0.00385" rpy="3.1415927 0 1.5707963"/>
+    <parent link="WJ-WK00-0018_45_3"/>
+    <child link="Segment3-4_v11_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="4.5553093" upper="7.993608"/>
+  </joint>
+  <joint name="Revolute_9" type="revolute">
+    <origin xyz="0.027 -6.9e-07 0.00885" rpy="3.1415927 0 -1.5707963"/>
+    <parent link="WJ-WK00-0018_45_8"/>
+    <child link="Segment3-4_v11_4"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Fastened_2" type="fixed">
+    <origin xyz="0.0863 0 -0.0449" rpy="0 0 -1.5707963"/>
+    <parent link="Segment3-4_v11_1"/>
+    <child link="WJ-WK00-0018_45_2"/>
+  </joint>
+  <joint name="Fastened_14" type="fixed">
+    <origin xyz="0 -0.0863 0.0399" rpy="0 0 -1.5707963"/>
+    <parent link="Segment3-4_v11_4"/>
+    <child link="WJ-WK00-0018_45_9"/>
+  </joint>
+  <joint name="Revolute_2" type="revolute">
+    <origin xyz="-6.9e-07 0.027 -0.00385" rpy="3.1415927 0 1.5707963"/>
+    <parent link="WJ-WK00-0018_45_2"/>
+    <child link="Part_2_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="4.5553093" upper="7.993608"/>
+  </joint>
+  <joint name="Revolute_10" type="revolute">
+    <origin xyz="0.027 -6.9e-07 0.00885" rpy="3.1415927 0 -1.5707963"/>
+    <parent link="WJ-WK00-0018_45_9"/>
+    <child link="Part_2_4"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Revolute_1" type="revolute">
+    <origin xyz="0.03619738 0.02353646 -0.02454329" rpy="-1.5707963 1.5707963 0"/>
+    <parent link="Part_2_1"/>
+    <child link="WJ-WK00-0018_45_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="6.1086524" upper="7.4176493"/>
+  </joint>
+  <joint name="Revolute_11" type="revolute">
+    <origin xyz="0.02353646 -0.03619738 0.02445671" rpy="3.1415927 -1.5707963 0"/>
+    <parent link="Part_2_4"/>
+    <child link="WJ-WK00-0018_45_10"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="1" velocity="1" lower="-6.2831853" upper="6.2831853"/>
+  </joint>
+  <joint name="Fastened_1" type="fixed">
+    <origin xyz="-0.027 6.9e-07 -0.00885" rpy="0 0 0"/>
+    <parent link="WJ-WK00-0018_45_1"/>
+    <child link="Part_1_4_1"/>
+  </joint>
+  <joint name="Fastened_15" type="fixed">
+    <origin xyz="-0.027 6.9e-07 -0.00435" rpy="3.1415927 0 1.5707963"/>
+    <parent link="WJ-WK00-0018_45_10"/>
+    <child link="StopaLewa_v6_1"/>
+  </joint>
+</robot>
