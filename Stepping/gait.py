@@ -1,19 +1,11 @@
 #!/usr/bin/env python3
 """
-gait.py
-
 Listens on  /robot/cmd
-Publishes   /gait/left/foot    x y z hip-relative (metres)
+Broadcasts  /gait/left/foot    x y z relatywne
             /gait/right/foot
-            /gait/left/angles  hip_roll hip_pitch knee_pitch ankle_pitch ankle_roll ankle_yaw (radians)
+            /gait/left/angles  hip_roll hip_pitch knee_pitch ankle_pitch ankle_roll ankle_yaw (radiany)
             /gait/right/angles
-            /gait/viz          full state for visualizer
-
-Swing curves loaded from swing_curves.yaml (same folder).
-IK solved via ikpy + biped.urdf (same folder).
-
-    pip install ikpy pyyaml
-    python3 gait.py
+            /gait/viz         
 """
 
 import time, sys, math, threading, os
